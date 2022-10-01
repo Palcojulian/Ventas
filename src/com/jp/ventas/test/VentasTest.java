@@ -5,16 +5,15 @@ import com.jp.ventas.Orden;
 
 public class VentasTest {
     public static void main(String[] args) {
-        System.out.println("Ingrese su orden, max " + Orden.getMAX_PRODUCTOS() + " productos:");
         Orden ordenUno = new Orden();
+        Orden ordenDos = new Orden();
         ordenUno.agregarProducto();
+        ordenDos.agregarProducto();
+        
         ordenUno.imprimirProductos();
-        
-     
-        
-        
-        
-//        
+        ordenDos.imprimirProductos();
+
+       
     }
 
 }
