@@ -46,8 +46,8 @@ public class Orden {
 
     public double calcularTotal() {
         double total = 0;
-        for (int i = 0; i < this.productos.length; i++) {
-            total += this.productos[i].getPrecio();
+        for (Producto producto : this.productos) {
+            total += producto.getPrecio();
         }
         return total;
     }

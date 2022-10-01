@@ -6,12 +6,12 @@ import com.jp.ventas.Orden;
 public class VentasTest {
     public static void main(String[] args) {
         Orden ordenUno = new Orden();
-        Orden ordenDos = new Orden();
+        //Orden ordenDos = new Orden();
         ordenUno.agregarProducto();
-        ordenDos.agregarProducto();
+        //ordenDos.agregarProducto();
         
         ordenUno.imprimirProductos();
-        ordenDos.imprimirProductos();
+        //ordenDos.imprimirProductos();
 
        
     }
