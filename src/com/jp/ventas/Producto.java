@@ -1,26 +1,27 @@
 package com.jp.ventas;
 
 
+
 public class Producto {
+
     private int idProducto;
     private String nombreProducto;
     private double precio;
     private static int contadorProductos;
-    
-    private Producto(){
+
+    public Producto() {
         this.idProducto = ++Producto.contadorProductos;
     }
-    
-    public Producto(String nombre, double precio){
-        this();
-        this.nombreProducto = nombre;
-        this.precio = precio;
-    }
 
+//    public Producto(String nombre, double precio) {
+//        this();
+//        this.nombreProducto = nombre;
+//        this.precio = precio;
+//    }
     public int getIdProducto() {
         return idProducto;
     }
-    
+
     public String getNombreProducto() {
         return nombreProducto;
     }
@@ -47,6 +48,5 @@ public class Producto {
         sb.append('}');
         return sb.toString();
     }
-    
-    
+
 }
